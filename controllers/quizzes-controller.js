@@ -1,6 +1,6 @@
 
 
-const quizService = require('../services/quiz-service')
+const quizService = require('../services/quizzes-service')
 
 module.exports = (app) => {
 
@@ -10,7 +10,7 @@ module.exports = (app) => {
     const findQuizById = (req, res) => {
         const quizId = req.params['qid']
         const quiz = quizService.findQuizById(quizId)
-        res.json(quiz)
+        res.send(quiz)
     }
 
     app.get('/api/quizzes', findAllQuizzes)
