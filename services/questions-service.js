@@ -1,30 +1,41 @@
 
-let questions = require('./questions.json')
 
-const createQuestion = () => {}
+const questionsDao = require("../daos/questions-dao")
 
-const createQuestionForQuiz = () => {}
+const findAllQuestions = () => questionsDao.findAllQuestions()
 
-const findAllQuestions = () => {
-    return questions
-}
+const findQuestionById = (qid) => questionsDao.findQuestionById(qid)
 
-const findQuestionsForQuiz = (quizId) =>
-    questions.filter(question => question.quizId === quizId)
+const findQuestionsForQuiz = (qid) => questionsDao.findQuestionsForQuiz(qid)
 
-const findQuestionById = (quid) => {
-    return questions.find((question) => {
-        return question._id === quid
-    })
-}
+module.exports = {findAllQuestions, findQuestionById, findQuestionsForQuiz}
 
-const updateQuestion = () => {}
 
-const deleteQuestion = () => {}
+// let questions = require('./questions.json')
+//
+// const createQuestion = () => {}
+//
+// const createQuestionForQuiz = () => {}
+//
+// const findAllQuestions = () => {
+//     return questions
+// }
+//
+// const findQuestionsForQuiz = (quizId) =>
+//     questions.filter(question => question.quizId === quizId)
+//
+// const findQuestionById = (quid) => {
+//     return questions.find((question) => {
+//         return question._id === quid
+//     })
+// }
+//
+// const updateQuestion = () => {}
+//
+// const deleteQuestion = () => {}
+//
+// module.exports = {
+//     createQuestion, createQuestionForQuiz, findAllQuestions,
+//     findQuestionsForQuiz, findQuestionById, updateQuestion, deleteQuestion
+// }
 
-module.exports = {
-    createQuestion, createQuestionForQuiz, findAllQuestions,
-    findQuestionsForQuiz, findQuestionById, updateQuestion, deleteQuestion
-}
-
-// /services/questions-service.js
