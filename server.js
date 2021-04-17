@@ -1,7 +1,16 @@
+const mongoUsername = process.env.MONGOLAB_USERNAME
+const mongoPassword = process.env.MONGOLAB_PASSWORD
 
 const express = require('express')
 
 const app = express()
+
+const mongoose = require('mongoose');
+
+mongoose.connect(`mongodb://${mongoUsername}:${mongoPassword}@iad2-c4-1.mongo.objectrocket.com:53615,iad2-c4-2.mongo.objectrocket.com:53615,iad2-c4-0.mongo.objectrocket.com:53615/quizzes?replicaSet=0c4ddc769915406a9652a7f8ca03e203`)
+// mongoose.connect('mongodb://localhost:27017/whiteboard',
+//                  {useNewUrlParser: true, useUnifiedTopology: true});
+
 
 const bodyParser = require('body-parser')
 
