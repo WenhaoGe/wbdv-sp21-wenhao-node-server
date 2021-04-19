@@ -4,9 +4,10 @@ module.exports = (app) => {
     const quizAttemptDao = require('../daos/quiz-attempts-dao')
 
     const createAttempt = (req, res) => {
-
         quizAttemptDao.createAttempt(req.params.qid, req.body)
-            .then(attempt => res.send(attempt))
+            .then(attempt => {
+                res.send(attempt)
+            })
     }
 
     const findAttemptsForQuiz = (req, res) => {

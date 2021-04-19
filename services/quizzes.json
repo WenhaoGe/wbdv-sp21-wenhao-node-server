@@ -1,11 +1,118 @@
 [
   {"_id": "123",
     "courseId": "ABC123",
-    "title": "Quiz 1"},
+    "title": "Quiz 1",
+    "questions":  [
+      {
+        "_id": "123",
+        "title": "JPA True False",
+        "quizId": "234",
+        "question": "JPA stands for Java Persistence API",
+        "correct": "true",
+        "answer": "",
+        "type": "TRUE_FALSE",
+        "choice": []
+      },
+      {
+        "_id": "234",
+        "title": "JPA Multiple Choice",
+        "quizId": "234",
+        "question": "What does JPA stand for?",
+        "correct": "Java Persistence API",
+        "answer": "",
+        "type": "MULTIPLE_CHOICE",
+        "choice": [
+          "Java Pseudo API",
+          "Java Persistence API",
+          "JSON Persistence API",
+          "JavaScript Persistence API"
+        ]
+      }]
+  },
   {"_id": "234",
     "courseId": "ABC234",
-    "title": "Quiz 2"},
+    "title": "Quiz 2",
+    "questions":  [
+      {
+        "_id": "345",
+        "title": "JSON True False",
+        "quizId": "234",
+        "question": "JSON stands for Java Object Notation",
+        "correct": "false",
+        "answer": "",
+        "type": "TRUE_FALSE",
+        "choice": []
+      },
+      {
+        "_id": "456",
+        "title": "JSON Multiple Choice",
+        "quizId": "345",
+        "question": "What does JSON stand for?",
+        "correct": "JavaScript Object Notation",
+        "answer": "",
+        "type": "MULTIPLE_CHOICE",
+        "choice": [
+          "JavaScript Object Notation",
+          "JavaScript Object Normalization",
+          "Java Object Normalization",
+          "Java Object Notation"
+        ]
+      }]},
+
   {"_id": "345",
     "courseId": "ABC234",
-    "title": "Quiz 3"}
+    "title": "Quiz 3",
+    "questions": [
+      {
+        "_id": "345",
+        "title": "JSON True False",
+        "quizId": "234",
+        "question": "JSON stands for Java Object Notation",
+        "correct": "false",
+        "answer": "",
+        "type": "TRUE_FALSE",
+        "choice": []
+      },
+      {
+        "_id": "456",
+        "title": "JSON Multiple Choice",
+        "quizId": "345",
+        "question": "What does JSON stand for?",
+        "correct": "JavaScript Object Notation",
+        "answer": "",
+        "type": "MULTIPLE_CHOICE",
+        "choice": [
+          "JavaScript Object Notation",
+          "JavaScript Object Normalization",
+          "Java Object Normalization",
+          "Java Object Notation"
+        ]
+      },
+      {
+        "_id": "567",
+        "title": "CSS True False",
+        "quizId": "345",
+        "question": "CSS stands for Cascading Style Sheet",
+        "correct": "true",
+        "answer": "",
+        "type": "TRUE_FALSE",
+        "choice": []
+      },
+      {
+        "_id": "678",
+        "title": "CSS Multiple Choice",
+        "quizId": "123",
+        "question": "What does CSS stand for?",
+        "correct": "Cascading Style Sheet",
+        "type": "MULTIPLE_CHOICE",
+        "answer": "",
+        "choice": [
+          "Class Style Sheet",
+          "Cascading Screen Style",
+          "Cascading Style Sheet",
+          "Cascading Style Screen"
+        ]
+      }
+    ] }
 ]
+
